@@ -17,7 +17,6 @@ require(['backbone', 'ht!templates/widget.html'], function (Backbone, WidgetTemp
 ```
 
 Requirements:
-Require.js (1.0.5)
-Hogan.js (1.0.4)
+Require.js (1.0.5), Hogan.js (1.0.4)
 
-The optimization works with node.js only.
+Note: The optimization works with node.js only.
