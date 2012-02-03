@@ -5,7 +5,12 @@
 Usage:
 
 ```javascript
-require(['ht!templates/widget.html'], function (WidgetTemplate) {
-  document.body.innerHTML = WidgetTemplate.render({ title: 'test' });
+require(['backbone', 'ht!templates/widget.html'], function (Backbone, WidgetTemplate) {
+  return Backbone.View.extend({
+        template: WidgetTemplate,
+        render: function () {
+          this.$el.html(this.template.render(this.model.toJSON()));
+        }
+  });
 });
 ```
