@@ -1,8 +1,9 @@
-## ht.js - RequireJS plugin for Hogan.js.
+## ht.js - Hogan.js template loader and compiler plugin for RequireJS.
 
-[ht.js](https://github.com/speier/ht.js) is a RequireJS plugin for [Hogan.js](https://github.com/twitter/hogan.js).
+[ht.js](https://github.com/speier/ht.js) is a [Hogan.js](https://github.com/twitter/hogan.js)
+template loader and compiler plugin for RequireJS.
 
-Usage:
+Usage example:
 
 ```javascript
 require(['backbone', 'ht!templates/widget.html'], function (Backbone, WidgetTemplate) {
