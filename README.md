@@ -7,10 +7,10 @@ Usage:
 ```javascript
 require(['backbone', 'ht!templates/widget.html'], function (Backbone, WidgetTemplate) {
   return Backbone.View.extend({
-        template: WidgetTemplate,
-        render: function () {
-          this.$el.html(this.template.render(this.model.toJSON()));
-        }
+    template: WidgetTemplate,
+    render: function () {
+      this.$el.html(this.template.render(this.model.toJSON()));
+      }
   });
 });
 ```
