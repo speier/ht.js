@@ -11,7 +11,7 @@ require(['backbone', 'ht!templates/widget.html'], function (Backbone, WidgetTemp
     template: WidgetTemplate,
     render: function () {
       this.$el.html(this.template.render(this.model.toJSON()));
-      }
+    }
   });
 });
 ```
