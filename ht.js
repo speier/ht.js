@@ -1,5 +1,5 @@
 ﻿/*
-** ht.js - Hogan templates plugin for RequireJS (based on James Burke's text plugin).
+** ht.js - Hogan.js plugin for RequireJS (based on James Burke's text plugin).
 ** See http://github.com/speier/ht.js/ for more info.
 */
 
