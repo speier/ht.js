@@ -1,7 +1,7 @@
 ﻿/*
-** ht.js - Hogan.js template loader and compiler plugin for RequireJS (based on James Burke's text plugin).
-** See http://github.com/speier/ht.js/ for more info.
-*/
+ * ht.js - Hogan.js template loader and compiler plugin for RequireJS (based on James Burke's text plugin).
+ * See http://github.com/speier/ht.js/ for more info.
+ */
 
 (function () {
     var progIds = ['Msxml2.XMLHTTP', 'Microsoft.XMLHTTP', 'Msxml2.XMLHTTP.4.0'],
@@ -36,8 +36,8 @@
             get = function (url, callback) {
                 var template = fs.readFileSync(url, 'utf8');
                 // We use utf-8, so remove BOM (Byte Mark Order)
-                if (template.charCodeAt(0) == 65279) {
-                    template = template.substring(1);
+                if (template.indexOf('\uFEFF') === 0) {
+                    template = template.substring(1, template.length);
                 }
                 var compiled = hogan.compile(template, { asString: true });
                 callback(compiled);
